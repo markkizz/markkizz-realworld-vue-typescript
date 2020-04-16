@@ -9,11 +9,17 @@
     ]
   },
   "rules": {
+    "only-arrow-functions": false,
     "indent": [true, "spaces", 2],
     "interface-name": false,
     "no-consecutive-blank-lines": false,
     "object-literal-sort-keys": false,
+    "object-literal-key-quotes": false,
     "ordered-imports": false,
-    "quotemark": [true, "single"]
+    "semicolon": [true, "never"],
+    "quotemark": [true, "single"],
+    "trailing-comma": false,
+    "variable-name": false,
+    "no-console": false
   }
 }

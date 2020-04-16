@@ -1,15 +1,30 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import * as user from '@/store/modules/user.js'
+import * as event from '@/store/modules/event.js'
+import * as notification from '@/store/modules/notification.js'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
+
+export interface State {
+  [key: string]: any
+}
 
 export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    user,
+    event,
+    notification
   },
-});
+  state: {
+    categories: [
+      'sustainability',
+      'nature',
+      'animal welfare',
+      'housing',
+      'education',
+      'food',
+      'community'
+    ]
+  }
+})
